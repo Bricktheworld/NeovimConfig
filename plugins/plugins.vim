@@ -1,9 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
-Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pineapplegiant/spaceduck'
+Plug 'joshdick/onedark.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'

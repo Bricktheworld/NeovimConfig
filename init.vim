@@ -1,15 +1,9 @@
 set nocompatible
 
 source $HOME/.config/nvim/plugins/plugins.vim
-
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
-
-colorscheme spaceduck
-
+" source $HOME/.config/nvim/spaceduck/spaceduck.vim
+" source $HOME/.config/nvim/onedark/onedark.vim
+source $HOME/.config/nvim/palenight/palenight.vim
 
 set number relativenumber
 set nu rnu
@@ -58,8 +52,6 @@ augroup autoformat_settings
   autocmd FileType vue AutoFormatBuffer prettier
 augroup END
 
-
-" autocmd VimEnter * CocCommand explorer 
 autocmd User CocNvimInit :CocCommand explorer
 
 " Copied and pasted from here: https://ianding.io/2019/07/29/configure-coc-nvim-for-c-c++-development/
@@ -204,7 +196,7 @@ let g:airline_right_sep = ''
 
 
 " Switch to your current theme
-let g:airline_theme = 'spaceduck'
+let g:airline_theme = 'onedark'
 
 " Always show tabs
 set showtabline=2
