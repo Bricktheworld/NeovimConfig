@@ -10,6 +10,7 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 Plug 'preservim/nerdtree'
+Plug 'gabrielelana/vim-markdown'
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Debugger
 Plug 'puremourning/vimspector'
