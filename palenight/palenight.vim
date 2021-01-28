@@ -1,4 +1,7 @@
 set background=dark
+let g:palenight_color_overrides = {
+\    'black': { 'gui': '#2e3440', "cterm": "0", "cterm16": "0" },
+\}
 colorscheme palenight
 let g:airline_theme = "palenight"
 
@@ -15,3 +18,4 @@ if (has("termguicolors"))
 endif
 
 let g:palenight_terminal_italics=1
+

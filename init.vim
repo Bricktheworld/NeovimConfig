@@ -1,9 +1,11 @@
+set clipboard+=unnamedplus
 set nocompatible
 
 source $HOME/.config/nvim/plugins/plugins.vim
 " source $HOME/.config/nvim/spaceduck/spaceduck.vim
 " source $HOME/.config/nvim/onedark/onedark.vim
 source $HOME/.config/nvim/palenight/palenight.vim
+" source $HOME/.config/nvim/nord/nord.vim
 
 set number relativenumber
 set nu rnu
