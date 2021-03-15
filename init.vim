@@ -5,6 +5,7 @@ source $HOME/.config/nvim/plugins/plugins.vim
 " source $HOME/.config/nvim/spaceduck/spaceduck.vim
 " source $HOME/.config/nvim/onedark/onedark.vim
 source $HOME/.config/nvim/palenight/palenight.vim
+source $HOME/.config/nvim/fzf/fzf.vim
 " source $HOME/.config/nvim/nord/nord.vim
 
 set number relativenumber
@@ -18,10 +19,18 @@ set smartindent
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
+" Glaive codefmt google_java_executable="java -jar /home/brandon/google-java-format-1.9-all-deps.jar"
+
 command! Bd bp|bd #
 
 nmap <C-_> gcc
 vmap <C-_> gc
+
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+set mouse=a
 autocmd FileType cpp setlocal commentstring=//\ %s
 
 noremap <Tab> :bn<CR>
@@ -31,10 +40,10 @@ noremap <Leader><S-Tab> :Bw!<CR>
 noremap <C-t> :tabnew split<CR>
 noremap <S-q> :Bd<CR>
 
-nnoremap <leader>dd :call vimspector#Launch()<CR>
-nnoremap <leader>ds :call vimspector#Reset()<CR>
-nnoremap <leader>dbp :call vimspector#ToggleBreakpoint()<CR>
-nnoremap <leader>d<space> :call vimspector#Continue()<CR>
+nnoremap <F5> :call vimspector#Launch()<CR>
+nnoremap <F4> :call vimspector#Reset()<CR>
+nnoremap <F2> :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <F6> :call vimspector#Continue()<CR>
 
 set nocompatible
 filetype off
