@@ -1,6 +1,7 @@
 vim.o.completeopt = "menuone,noselect"
 
 
+
 require'compe'.setup {
   enabled = true;
   autocomplete = true;
@@ -41,7 +42,7 @@ local check_back_space = function()
         return false
     end
 end
-      
+
 _G.tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-n>"

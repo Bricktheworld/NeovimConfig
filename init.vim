@@ -6,7 +6,11 @@ colorscheme iceberg
 source $HOME/.config/nvim/fzf/fzf.vim
 source $HOME/.config/nvim/nerdcommenter/nerdcommenter.vim
 luafile $HOME/.config/nvim/lsp/clangd.lua
+luafile $HOME/.config/nvim/lsp/dart.lua
 luafile $HOME/.config/nvim/lsp/cmake.lua
+luafile $HOME/.config/nvim/lsp/js.lua
+luafile $HOME/.config/nvim/lsp/py.lua
+luafile $HOME/.config/nvim/lsp/lua.lua
 luafile $HOME/.config/nvim/lsp/compe-config.lua
 luafile $HOME/.config/nvim/lsp/treesitter.lua
 source $HOME/.config/nvim/lsp/lsp-config.vim
@@ -33,6 +37,7 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 set mouse=a
 autocmd FileType cpp setlocal commentstring=//\ %s
+autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
 
 noremap <Tab> :BufferNext<CR>
 noremap <S-Tab> :BufferPrevious<CR>
